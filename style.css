@@ -1,0 +1,67 @@
+ /* type 0f selectors:- 
+
+    pseudo element selector :- use to sytle specific part of element 
+
+    Syntax : p::first-line{
+        color: pink;
+    } 
+    */
+
+    p::first-line{
+        color: pink;
+    }
+
+    p::first-letter{
+        color: rgb(143, 10, 32);
+    }
+
+    /* pseudo class use single color where pseudo element use double colom */
+
+    /* attribute selector :- 
+    select the attribute and give style them .(different attribute with different style  )
+    syntax :- input[type="text"]{
+        font-size=20px;
+     } */
+
+     input[type="text"]{
+        font-size: 20px;
+     }
+
+     /* POSITION IN CSS :
+        static : fix postion , origin or by defualt value it is .
+
+
+        ralative: its editable position its same static but we can change this by adding
+        offset value (top left bottom right)
+        element stay in normal doc .flow.
+     */
+
+     .parant{
+        background-color: pink;
+        height: 200vh;
+        padding: 20px;
+        border: 1px;
+     }
+
+     .child{
+        border: 1px solid black;
+     }
+
+     .child-1{
+        background-color: orange;
+        padding: 20px;
+        position: static ;
+        
+     }
+
+     .child-2{
+        background-color: rgb(243, 241, 238);
+        padding: 20px;
+        
+     }
+
+     .child-3{
+        
+        background-color: rgb(5, 174, 42);
+        padding: 20px;
+     }
